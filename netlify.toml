@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm -F @project/saas-platform build"
+  command = "pnpm -r --filter @project/utils --filter @project/workflow-sdk --filter @project/ui-components build && pnpm -F @project/saas-platform build"
   publish = "apps/saas-platform/dist"
 
 [[redirects]]
