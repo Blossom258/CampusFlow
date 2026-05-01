@@ -1,4 +1,4 @@
-import type { EngineFlowDefinition } from "../types";
+import type { EngineFlowDefinition } from "../types/engine";
 
 /**
  * 从流程对象中安全地提取 EngineFlowDefinition

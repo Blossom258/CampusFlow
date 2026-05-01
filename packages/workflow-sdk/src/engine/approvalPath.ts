@@ -3,7 +3,7 @@ import type {
   FormContext,
   ApprovalPathNode,
   EngineFlowNode,
-} from "../types";
+} from "../types/engine";
 import { resolveNextNodeId } from "./gatewayResolver";
 
 type ApprovalConfig = {

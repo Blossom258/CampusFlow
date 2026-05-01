@@ -1,4 +1,4 @@
-import type { EngineFlowDefinition, FormContext } from "../types";
+import type { EngineFlowDefinition, FormContext } from "../types/engine";
 import { evaluateCondition } from "./conditionEvaluator";
 
 export function resolveNextNodeId(
