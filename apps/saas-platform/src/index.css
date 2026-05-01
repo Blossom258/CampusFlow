@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+
+:root {
+  --cf-bg: #f4f6fb;
+  --cf-surface: #ffffff;
+  --cf-surface-soft: #f8f9ff;
+  --cf-text: #10203a;
+  --cf-text-muted: #64748b;
+  --cf-border: #dbe3f3;
+  --cf-primary: #1e6fff;
+  --cf-primary-deep: #164fd8;
+  --cf-accent: #14b8a6;
+  --cf-shadow: 0 14px 38px rgba(16, 32, 58, 0.12);
+  --cf-radius-lg: 20px;
+  --cf-radius-md: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Manrope', 'Noto Sans SC', sans-serif;
+  color: var(--cf-text);
+  background:
+    radial-gradient(circle at 12% 18%, rgba(20, 184, 166, 0.18), transparent 34%),
+    radial-gradient(circle at 88% 6%, rgba(30, 111, 255, 0.18), transparent 26%),
+    linear-gradient(180deg, #f7f9ff 0%, #eef2fb 100%);
+}

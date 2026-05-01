@@ -1,0 +1,42 @@
+.cf-layout {
+  min-height: 100vh;
+}
+
+.cf-sider {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-right: 1px solid var(--cf-border);
+  backdrop-filter: blur(6px);
+}
+
+.cf-brand {
+  margin: 18px 16px;
+  padding: 14px 12px;
+  border-radius: var(--cf-radius-md);
+  background: linear-gradient(135deg, rgba(30, 111, 255, 0.14), rgba(20, 184, 166, 0.12));
+}
+
+.cf-brand-title {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.cf-header {
+  padding: 0 24px !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-bottom: 1px solid var(--cf-border);
+  backdrop-filter: blur(8px);
+}
+
+.cf-content {
+  margin: 22px 16px 0;
+}
+
+.cf-content-inner {
+  padding: 22px;
+  min-height: 360px;
+  background: var(--cf-surface);
+  border-radius: var(--cf-radius-lg);
+  border: 1px solid var(--cf-border);
+  box-shadow: 0 6px 22px rgba(15, 38, 80, 0.06);
+}

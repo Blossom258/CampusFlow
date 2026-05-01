@@ -1,0 +1,10 @@
+{
+  "users": [
+    { "id": "u-admin", "username": "admin", "password": "fm123321", "role": "admin", "name": "系统管理员" },
+    { "id": "u-student", "username": "student", "password": "fm123321", "role": "student", "name": "学生" },
+    { "id": "u-tutor", "username": "tutor", "password": "fm123321", "role": "tutor", "name": "导师" },
+    { "id": "u-academic", "username": "academic", "password": "fm123321", "role": "academic_office", "name": "教务办" }
+  ],
+  "applications": [],
+  "tasks": []
+}

@@ -1,0 +1,19 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: campusflow-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: CHANGE_ME
+      MYSQL_DATABASE: campusflow
+      MYSQL_USER: campus_user
+      MYSQL_PASSWORD: CHANGE_ME
+    ports:
+      - "3306:3306"
+    volumes:
+      - campusflow-mysql-data:/var/lib/mysql
+      - ./apps/campus-api/sql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    command: ["--default-authentication-plugin=mysql_native_password"]
+
+volumes:
+  campusflow-mysql-data:

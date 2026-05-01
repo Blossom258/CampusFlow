@@ -1,0 +1,13 @@
+{
+  "name": "@project/campus-api",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "dev:mysql": "USE_MYSQL=true node server.js"
+  },
+  "dependencies": {
+    "mysql2": "^3.15.2"
+  }
+}

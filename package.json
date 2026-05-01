@@ -1,0 +1,19 @@
+{
+  "name": "enterprise-flow",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "dev:web": "pnpm -F @project/saas-platform dev",
+    "dev:api": "pnpm -F @project/campus-api dev",
+    "dev:api:mysql": "USE_MYSQL=true pnpm -F @project/campus-api dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}

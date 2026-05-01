@@ -1,0 +1,83 @@
+.login-page {
+  min-height: 100vh;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+}
+
+.login-shell {
+  width: min(980px, 100%);
+  min-height: 580px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  border-radius: 28px;
+  overflow: hidden;
+  background: var(--cf-surface);
+  box-shadow: var(--cf-shadow);
+  border: 1px solid var(--cf-border);
+}
+
+.login-hero {
+  padding: 48px;
+  background:
+    linear-gradient(145deg, #0f2c63, #1d4ed8 58%, #0ea5a2),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent);
+  color: #eff6ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-hero h2 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.1;
+}
+
+.login-hero p {
+  margin-top: 16px;
+  max-width: 380px;
+  color: rgba(239, 246, 255, 0.9);
+}
+
+.login-card {
+  padding: 44px 36px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.quick-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.role-tag {
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 4px 12px;
+  border: 1px solid var(--cf-border);
+  transition: all 0.18s ease;
+}
+
+.role-tag:hover {
+  border-color: #93c5fd;
+  color: var(--cf-primary);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .login-shell {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .login-hero {
+    padding: 28px;
+    gap: 16px;
+  }
+
+  .login-card {
+    padding: 28px 20px;
+  }
+}
